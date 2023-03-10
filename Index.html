@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Style_tren.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <!-- INICIO -->
+      <div id="inicio">
+        <div class="fondo">
+          <img src="./imagenes/howarts.jpg" alt="" />
+        </div>
+
+        <div class="formulario" id="login">
+          <label for="usuario">Nombre</label>
+          <input type="text" id="usuario" placeholder="Usuario" />
+          <br />
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" placeholder="Contraseña" />
+          <br />
+          <input type="button" value="Iniciar Sesión" onclick="validarUsuario()" />
+        </div>
+      </div>
+
+      <!-- VAGONES -->
+      <div id="vagones">
+        <div class="vagon">
+          <h3 class="text">Vagon Slytherin</h3>
+          <img class="imagen" onclick="reservar()" src="./imagenes/0.61_Slytherin_Crest_Transparent.webp" alt="" srcset="" />
+        </div>
+
+        <div class="vagon" id="vagonVIP">
+          <h3 class="text">Vagon Gryffindor</h3>
+          <img class="imagen" src="./imagenes/Gryffindor-Logo-PNG-Image.png" alt="" srcset="" />
+        </div>
+
+        <div class="vagon">
+          <h3 class="text">Vagones Muggle</h3>
+          <img class="imagen" src="./imagenes/440px-Biswa_Ijtema_Dhaka_Bangladesh_24012010.jpg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button id="salir" onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+    <script src="./js/Rtren.js"></script>
+  </body>
+</html>
